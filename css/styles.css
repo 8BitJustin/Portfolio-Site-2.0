@@ -1,0 +1,387 @@
+/*
+* Colors:
+* #2F4E6F - Dark Blue
+* #98B1C4 - Lighter Blue
+* #C8D7E3 - Lightest Blue
+* #ed650e - Orange-ish
+* #000000 - Black
+* Silver
+* Aliceblue
+*/
+
+/* Misc */
+
+    body, .nav-holder {
+        overflow: hidden;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+/* Backgrounds */
+
+    .first {
+        background-color: #2F4E6F;
+        color: white;
+    }
+
+    .second {
+        background-image: url('../img/tumamocSunrise.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    .third {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .fourth {
+        background-color: coral;
+        color: white;
+    }
+
+    .fifth {
+        background-color: firebrick;
+        color: white;
+    }
+
+/* Front Page */
+
+    .topleft_div {
+        color: #C8D7E3;
+        background-image: url('../img/arizona_canyon.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0px;
+        width: 50%;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .topright_div {
+        color: #2F4E6F;
+        background-color: #98B1C4;
+        position: absolute;
+        right: 0px;
+        width: 50%;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .content-row-left, .content-row-right {
+        height: 100vh;
+    }
+
+    .content-row-left h3, .content-row-right h3 {
+        font-size: 4em;
+    }
+
+    #enter-text {
+        color: white;
+        font-size: 1em;
+        position: absolute;
+        left: 50%;
+        top: 38%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    #enter-image {
+        width: auto;
+        max-width: 7%;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    /* Media Queries - Front Page */
+
+    @media (max-width: 1024px) {
+        .content-row-left h3, .content-row-right h3 {
+            font-size: 2em;
+        }
+        #enter-text {
+            font-size: .9em;
+        }
+        #enter-image {
+            width: auto;
+            max-width: 10%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .content-row-left h3, .content-row-right h3, #enter_btn {
+            font-size: 1.6em;
+        }
+        #enter-text {
+            font-size: .8em;
+        }
+        #enter-image {
+            width: auto;
+            max-width: 14%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .content-row-left h3, .content-row-right h3, #enter_btn {
+            font-size: 1.2em;
+        }
+        #enter-text {
+            top: 41%;
+        }
+    }
+
+/* /Front Page */
+
+/* Overlay/Navigation */
+
+    .overlay img {
+        height: 56px;
+        margin-bottom: 46px;
+        padding: 0 40px 0 10px;
+    }
+
+    .nav-holder {
+        position: absolute;
+        bottom: -8vh;
+        width: 100%;
+        height: 8vh;
+        z-index: 5;
+        display: none;
+    }
+
+    .nav-holder i {
+        font-size: 3.5em;
+        padding: 0 8px;
+        margin: 0 20px;
+        border-radius: 5px;
+    }
+
+    /* Unvisited Link */
+    .nav-holder a:link {
+        color: white;
+        opacity: 1;
+    }
+
+    /* Visited Link */
+    .nav-holder a:visited {
+        color: white;
+        opacity: 1;
+    }
+
+    /* Mouseover Link */
+    .nav-holder a:hover {
+        color: white;
+    }
+
+    /* Selected Link
+    .nav-holder a:active {
+        color: white;
+    } */
+
+    /* Active class to give attention to selected icon for slide */
+    .active-nav, .nav-icon:hover {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+
+    /* Media Queries */
+
+    @media (max-width: 1024px) {
+        .overlay img {
+            height: 51px;
+            margin-bottom: 40px;
+            padding-right: 24px;
+        }
+        .nav-holder i {
+            font-size: 3.2em;
+            padding: 0 6px;
+            margin: 0 10px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .overlay img {
+            height: 38px;
+            margin-bottom: 30px;
+            padding-right: 18px;
+        }
+        .nav-holder i {
+            font-size: 2.4em;
+            padding: 0 3px;
+            margin: 0 9px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .overlay img {
+            height: 32px;
+            margin-bottom: 24px;
+            padding-right: 16px;
+        }
+        .nav-holder i {
+            font-size: 2em;
+            padding: 0 2px;
+            margin: 0 8px;
+        }
+    }
+
+    @media (max-width: 330px) {
+        .overlay img {
+            height: 30px;
+            margin-bottom: 18px;
+            padding-right: 12px;
+        }
+        .nav-holder i {
+            font-size: 1.5em;
+            padding: 0 1px;
+            margin: 0 6px;
+        }
+    }
+
+/* /Overlay */
+
+/* Carousel */
+
+    /* Common */
+
+    .title {
+        position: absolute;
+	    top: 10px;
+	    left: 20px;
+        font-size: 3.2em;
+    }
+
+    @media (max-width: 1024px) {
+        .title {
+            top: 10px;
+	        left: 20px;
+            font-size: 2.8em;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .title {
+            top: 10px;
+	        left: 20px;
+            font-size: 2.4em;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .title {
+            top: 10px;
+	        left: 20px;
+            font-size: 2em;
+        }
+    }
+
+    @media (max-width: 330px) {
+        .title {
+            top: 10px;
+	        left: 20px;
+            font-size: 1.8em;
+        }
+    }
+
+    /* About Slide */
+
+    .about-wrapper {
+        padding-top: 50px;
+    }
+
+    .about-left-heading, .about-right-heading {
+        font-size: 2.4em;
+    }
+
+    .about-left-para {
+        font-size: 1em;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    ul .list-group-item {
+        background-color: #2F4E6F;
+        border: none;
+        padding: 5px 0;
+    }
+
+    /* Media Queries - About Slide */
+
+    @media (max-width: 1024px) {
+        .about-left-heading, .about-right-heading {
+            font-size: 2em;
+        }
+        .about-left-para {
+            font-size: .9em;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .about-wrapper {
+            padding-top: 40px;
+        }
+        .about-left-heading, .about-right-heading {
+            font-size: 1.8em;
+        }
+        .about-right-heading {
+            margin-top: -30px;
+        }
+        .about-left-para {
+            font-size: .8em;
+        }
+        .about-image-div {
+            display: none;
+        }
+        ul .list-group-item {
+            font-size: 1em;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .about-left-heading, .about-right-heading {
+            font-size: 1.6em;
+        }
+        .about-left-para {
+            font-size: .7em;
+        }
+    }
+
+    @media (max-width: 330px) {
+        .about-left-heading, .about-right-heading {
+            font-size: 1.4em;
+        }
+        .about-left-para {
+            font-size: .6em;
+        }
+    }
+
+
+
+
+    /*Helps background load properly*/
+
+    .carousel-item {
+        height: 100vh;
+    }
+
+    .carousel, .item, .active {
+        height:100vh;
+    }
+
+    .carousel-inner {
+        height:100vh;
+    }

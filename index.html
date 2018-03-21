@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bttn CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css"> -->
+    <!-- Bttn CSS local link, linking external for now -->
+    <link rel="stylesheet" href="css/bttn.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <title>J.Olson.Digital</title>
+  </head>
+  <body>
+    <div class="row front">
+      <div class="topleft_div">
+        <div class="row content-row-left align-items-center text-center">
+          <div class="col-12">
+            <div class="col-12 mx-auto">
+              <h3 class="display-4">Justin Olson</h3>
+            </div>
+            <div class="col-12 mx-auto">
+              <h3 class="display-4">Digital</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="topright_div">
+        <div class="row content-row-right justify-content-center align-items-center text-center">
+          <div class="col-12">
+            <div class="col-12 mx-auto">
+              <h3 class="display-4">Web Design &amp;</h3>
+            </div>
+            <div class="col-12 mx-auto">
+              <h3 class="display-4">Development</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="lead" id="enter-text">Click to enter</p>
+      <img src="img/logo03white.png" alt="Justin Olson Logo" id="enter-image" onclick="pushed()">
+    </div>
+    <div class="overlay">
+      <div class="nav-holder text-center" id="navigation">
+        <a data-target='#myCarousel' href="#" onclick="pulled()"><img src="img/logo03white.png" alt="Justin Olson Logo"></a>
+        <a data-target='#myCarousel' data-slide-to='0' href="#"><i class="material-icons nav-icon active-nav">book</i></a>
+        <a data-target='#myCarousel' data-slide-to='1' href="#"><i class="material-icons nav-icon">code</i></a>
+        <a data-target='#myCarousel' data-slide-to='2' href="#"><i class="material-icons nav-icon">create</i></a>
+        <a data-target='#myCarousel' data-slide-to='3' href="#"><i class="material-icons nav-icon">computer</i></a>
+        <a data-target='#myCarousel' data-slide-to='4' href="#"><i class="material-icons nav-icon">comment</i></a>
+      </div>
+    </div>
+    <div id="myCarousel" class="carousel slide full-screen" data-ride="carousel" data-interval="false" data-wrap='false'>
+      <div class="carousel-inner">
+        <div class="carousel-item first active" data-slide-no='0'>
+          <h1 class="title display-3">About Myself</h1>
+          <div class="row about-wrapper h-100 justify-content-center">
+            <div class="about-left col-11 col-md-6 col-lg-6 align-self-center">
+              <h1 class="about-left-heading display-4 text-center pb-3">I'm Justin, I code.</h1>
+              <p class="about-left-para lead">In June of 2015, I made it a goal to add value to myself, and I decided to teach myself how to design and build websites. Since then, I've gained experience with numerous languages, and I've been trusted by some local businesses to build responsive websites to represent them and what they do.</p>
+              <p class="about-left-para lead">I'm learning daily, and have recently been selected to participate in the Grow with Google Scholarship program, which is just increasing my desire to learn more.</p>
+              <p class="about-left-para lead text-center">Click below to contact me, view my github, or my resume.</p>
+              <!-- Buttons for contact, github, and resume -->
+              <div class="btn-wrapper text-center">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <a class="btn btn-lg btn-outline-light" id="btn-contact" data-target='#myCarousel' data-slide-to='4' href="#">Contact</a>
+                  <a href="https://github.com/8BitJustin" class="btn btn-lg btn-outline-light" id="btn-github" target="_blank">GitHub</a>
+                  <a href="justin-resume-reduce-2017.pdf" class="btn btn-lg btn-outline-light" id="btn-resume" target="_blank">Resume</a>
+                </div>
+              </div>
+            </div>
+            <div class="about-image-div col-5 col-md-4 col-lg-3 col-xl-2 align-self-center">
+              <img src="img/doggoSelfie.png" alt="Selfie with my silly doggo - Phoenix" class="about-image">
+            </div>
+            <div class="about-right col-12">
+              <h1 class="about-right-heading display-4 text-center pb-3">And what else do I do?</h1>
+              <ul class="list-group text-center">
+                  <li class="lead list-group-item">&sdot;&nbsp;Well, I do love me some PC Gaming&nbsp;&sdot;</li>
+                  <li class="lead list-group-item">&sdot;&nbsp;Hiking just about any trail in the Tucson, AZ area&nbsp;&sdot;</li>
+                  <li class="lead list-group-item">&sdot;&nbsp;Relaxing with my the kittehs Sirena and Sammie, and doggo Phoenix&nbsp;&sdot;</li>
+                  <li class="lead list-group-item">&sdot;&nbsp;Driving my new 2018 Civic SI&nbsp;&sdot;</li>
+                </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item second" data-slide-no='1'>
+          <div>
+            <h1 class="title display-3">Technical</h1>
+          </div>
+        </div>
+        <div class="carousel-item third" data-slide-no='2'>
+          <div>
+            <h1 class="title display-3">Current</h1>
+          </div>
+        </div>
+        <div class="carousel-item fourth" data-slide-no='3'>
+          <div>
+            <h1 class="title display-3">Ventures</h1>
+          </div>
+        </div>
+        <div class="carousel-item fifth" data-slide-no='4'>
+          <div>
+            <h1 class="title display-3">Contact</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="bottom_div">
+      <h1 class="display-1">Hello World!</h1>
+    </div> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>
