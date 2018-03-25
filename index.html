@@ -11,11 +11,6 @@
     <!-- Styles CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Bttn CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css"> -->
-    <!-- Bttn CSS local link, linking external for now -->
-    <link rel="stylesheet" href="css/bttn.css">
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -58,7 +53,7 @@
     </div>
     <div class="overlay">
       <div class="nav-holder text-center" id="navigation">
-        <a data-target='#myCarousel' href="#" onclick="pulled()"><img src="img/logo03white.png" alt="Justin Olson Logo"></a>
+        <a data-target='#myCarousel' href="#" onclick="pulled()" id="exit"><img src="img/logo03white.png" alt="Justin Olson Logo"></a>
         <a data-target='#myCarousel' data-slide-to='0' href="#"><i class="material-icons nav-icon active-nav">book</i></a>
         <a data-target='#myCarousel' data-slide-to='1' href="#"><i class="material-icons nav-icon">code</i></a>
         <a data-target='#myCarousel' data-slide-to='2' href="#"><i class="material-icons nav-icon">create</i></a>
@@ -71,38 +66,31 @@
         <div class="carousel-item first active" data-slide-no='0'>
           <h1 class="title display-3">About Myself</h1>
           <div class="row about-wrapper h-100 justify-content-center">
-            <div class="about-left col-11 col-md-6 col-lg-6 align-self-center">
-              <h1 class="about-left-heading display-4 text-center pb-3">I'm Justin, I code.</h1>
-              <p class="about-left-para lead">In June of 2015, I made it a goal to add value to myself, and I decided to teach myself how to design and build websites. Since then, I've gained experience with numerous languages, and I've been trusted by some local businesses to build responsive websites to represent them and what they do.</p>
-              <p class="about-left-para lead">I'm learning daily, and have recently been selected to participate in the Grow with Google Scholarship program, which is just increasing my desire to learn more.</p>
-              <p class="about-left-para lead text-center">Click below to contact me, view my github, or my resume.</p>
-              <!-- Buttons for contact, github, and resume -->
-              <div class="btn-wrapper text-center">
+            <div class="col-8 col-md-5 col-lg-4 col-xl-3 about-image animated align-self-center">
+              <img src="img/bwTumamocSelfie.jpg" alt="Black and White Image of myself on Tumamoc Hill" class="img-fluid">
+            </div>
+            <div class="col-10 col-md-5 col-lg-4 col-xl-3 about-text animated align-self-center">
+              <p class="about-para lead">Hiya! I'm Justin, and I like to code. With an initial commit date of June 1, 2015, I'm have learned and am comfortable with numerous languages, including HTML, CSS, JavaScript, a bit of Python, and have experience with libraries such as jQuery and Bootstrap 3/4.</p>
+              <p class="about-para lead">I'm constantly learning, and in the last few months, I'm happy to say that a few local businesses have trusted me to put their websites together. With this, I'm hoping to not only gain more freelance experience, but to eventually have a full time position in this field.</p>
+              <p class="about-para lead">My Github repositories and current resume can be accessed below, so if you have any questions, want to work together, or would like an idea to come to life, please reach out, as I'm eager to see where this path leads next.</p>
+              <!-- Buttons for github, and resume -->
+              <div class="btn-div text-center">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                  <a class="btn btn-lg btn-outline-light" id="btn-contact" data-target='#myCarousel' data-slide-to='4' href="#">Contact</a>
                   <a href="https://github.com/8BitJustin" class="btn btn-lg btn-outline-light" id="btn-github" target="_blank">GitHub</a>
                   <a href="justin-resume-reduce-2017.pdf" class="btn btn-lg btn-outline-light" id="btn-resume" target="_blank">Resume</a>
                 </div>
               </div>
             </div>
-            <div class="about-image-div col-5 col-md-4 col-lg-3 col-xl-2 align-self-center">
-              <img src="img/doggoSelfie.png" alt="Selfie with my silly doggo - Phoenix" class="about-image">
-            </div>
-            <div class="about-right col-12">
-              <h1 class="about-right-heading display-4 text-center pb-3">And what else do I do?</h1>
-              <ul class="list-group text-center">
-                  <li class="lead list-group-item">&sdot;&nbsp;Well, I do love me some PC Gaming&nbsp;&sdot;</li>
-                  <li class="lead list-group-item">&sdot;&nbsp;Hiking just about any trail in the Tucson, AZ area&nbsp;&sdot;</li>
-                  <li class="lead list-group-item">&sdot;&nbsp;Relaxing with my the kittehs Sirena and Sammie, and doggo Phoenix&nbsp;&sdot;</li>
-                  <li class="lead list-group-item">&sdot;&nbsp;Driving my new 2018 Civic SI&nbsp;&sdot;</li>
-                </ul>
-            </div>
           </div>
-
         </div>
-        <div class="carousel-item second" data-slide-no='1'>
-          <div>
-            <h1 class="title display-3">Technical</h1>
+        <div class="carousel-item second" id="second" data-slide-no='1'>
+          <h1 class="title display-3">Technical</h1>
+          <div class="row h-100 tech-wrapper justify-content-center align-items-center">
+            <div class="col-lg-6 col-12 align-self-center">
+              <p class="lead text-center">Of the languages I've learned, these or the ones I'm most familiar with.</p>
+              <p class="lead text-center p-last">**The higher the number, the more comfortable I feel with said language**</p>
+              <canvas id="myChart"></canvas>
+            </div>
           </div>
         </div>
         <div class="carousel-item third" data-slide-no='2'>
@@ -123,16 +111,14 @@
       </div>
     </div>
 
-    <!-- <div class="bottom_div">
-      <h1 class="display-1">Hello World!</h1>
-    </div> -->
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/Chart.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/chartScripts.js"></script>
 
   </body>
 </html>
