@@ -409,6 +409,10 @@
             height: 100vh;
         }
 
+        .tech-top-para, .tech-bot-para {
+            font-size: 2em;
+        }
+
         .tech-top-para {
             margin-bottom: 60px;
         }
@@ -417,6 +421,57 @@
             margin-top: 60px;
         }
 
+        #chartContainer {
+            height: 370px;
+            width: 100%;
+        }
+
+        /* Media Queries Tech Slide */
+
+        @media (max-width: 1024px) {
+            #chartContainer {
+                height: 320px;
+            }
+            .tech-top-para, .tech-bot-para {
+                font-size: 1.7em;
+            }
+            .tech-top-para {
+                margin-bottom: 50px;
+            }
+            .tech-bot-para {
+                margin-top: 50px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #chartContainer {
+                height: 260px;
+            }
+            .tech-top-para, .tech-bot-para {
+                font-size: 1.4em;
+            }
+            .tech-top-para {
+                margin-bottom: 40px;
+            }
+            .tech-bot-para {
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #chartContainer {
+                height: 200px;
+            }
+            .tech-top-para, .tech-bot-para {
+                font-size: 1em;
+            }
+            .tech-top-para {
+                margin-bottom: 30px;
+            }
+            .tech-bot-para {
+                margin-top: 30px;
+            }
+        }
 
     /*Helps background load properly*/
 
