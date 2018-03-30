@@ -87,9 +87,10 @@
           <h1 class="title display-3">Technical</h1>
           <div class="row h-100 tech-wrapper justify-content-center align-items-center">
             <div class="col-lg-6 col-12 align-self-center">
-              <p class="lead text-center tech-top-para">Of the languages I've learned, these or the ones I'm most familiar with.</p>
+              <p class="lead text-center tech-top-para">Languages I'm most familiar with</p>
+              <p class="lead text-center tech-mid-para">1-10 scale - 10 being super-human</p>
               <div id="chartContainer"></div>
-              <p class="lead text-center tech-bot-para">I've also toyed with some mobile development, but mainly focusing on front end development currently.</p>
+
             </div>
           </div>
         </div>
@@ -119,55 +120,59 @@
     <script src="js/jquery.canvasjs.min.js"></script>
     <script src="js/scripts.js"></script>
 
-
     <script>
+
+
         const createChart = () => {
 
-        var chart = new CanvasJS.Chart("chartContainer", {
-          animationEnabled: true,
-          theme: "dark1", // "light1", "light2", "dark1", "dark2"
-          backgroundColor: null,
-          title: {
-            text: "Languages I know",
-            fontColor: '#2F4E6F',
-            fontFamily: 'Roboto',
-          },
-          axisY: {
-            title: "Comfort Level",
-            titleFontFamily: 'Roboto',
-            titleFontColor: '#2F4E6F',
-            labelFontColor: '#2F4E6F',
-            fontFamily: 'Roboto',
-            gridColor: '#2F4E6F',
-            tickColor: '#2F4E6F',
-            lineColor: '#2F4E6F',
-            // suffix: "%",
-            includeZero: true
-          },
-          axisX: {
-            fontColor: '#2F4E6F',
-            labelFontColor: '#2F4E6F',
-            labelFontFamily: 'Roboto',
-            gridColor: '#2F4E6F',
-            lineColor: '#2F4E6F',
-            // title: "Countries"
-          },
-          data: [{
-            type: "column",
-            indexLabelFontColor: "#2F4E6F",
-            // yValueFormatString: "#,##0.0#\"%\"",
-            dataPoints: [
-              { label: "HTML", y: 4.5 },
-              { label: "CSS", y: 4.5 },
-              { label: "JavaScript", y: 4.0 },
-              { label: "jQuery", y: 4.0 },
-              { label: "Bootstrap", y: 3.5 },
-              { label: "Python", y: 3.0 }
-            ],
-          }]
-        });
-      chart.render();
-      chart.destroy();
+          var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            theme: "dark1", // "light1", "light2", "dark1", "dark2"
+            backgroundColor: null,
+            title: {
+              // text: "Languages I know",
+              fontColor: '#2F4E6F',
+              fontFamily: 'Roboto',
+            },
+            axisY: {
+              // title: "Comfort Level",
+              titleFontFamily: 'Roboto',
+              titleFontColor: '#2F4E6F',
+              labelFontColor: '#2F4E6F',
+              fontFamily: 'Roboto',
+              gridColor: 'none',
+              tickColor: '#2F4E6F',
+              lineColor: '#2F4E6F',
+              tickLength: 0,
+              // suffix: "%",
+              includeZero: true
+            },
+            axisX: {
+              fontColor: '#2F4E6F',
+              labelFontColor: '#2F4E6F',
+              labelFontFamily: 'Roboto',
+              labelFontSize: 16,
+              tickColor: '#2F4E6F',
+              lineColor: '#2F4E6F',
+              // title: "Countries"
+            },
+            data: [{
+              type: "column",
+              indexLabelFontColor: "#2F4E6F",
+              // yValueFormatString: "#,##0.0#\"%\"",
+              color: '#F0F8FF',
+              dataPoints: [
+                { label: "HTML", y: 9 },
+                { label: "CSS", y: 8 },
+                { label: "JavaScript", y: 7.5 },
+                { label: "jQuery", y: 7 },
+                { label: "Bootstrap", y: 7 },
+                { label: "Python", y: 5 }
+              ],
+            }]
+          });
+        chart.render();
+        chart.destroy();
       }
     </script>
 

@@ -27,7 +27,7 @@
     }
 
     .second {
-        background-color: #C8D7E3;
+        background-color: #98B1C4;
         /* background-image: url('../img/tumamocSunrise.png');
         background-size: cover;
         background-position: center;
@@ -63,6 +63,7 @@
         width: 50%;
         height: 100vh;
         z-index: 1;
+        border-right: 3px solid #2F4E6F;
     }
 
     .topright_div {
@@ -73,6 +74,7 @@
         width: 50%;
         height: 100vh;
         z-index: 1;
+        border-left: 3px solid #2F4E6F;
     }
 
     .content-row-left, .content-row-right {
@@ -312,7 +314,8 @@
         @media (max-width: 767px) {
             .title {
                 top: 10px;
-                left: 20px;
+                left: 50%;
+                transform: translateX(-50%);
                 font-size: 2.4em;
             }
         }
@@ -320,7 +323,6 @@
         @media (max-width: 576px) {
             .title {
                 top: 10px;
-                left: 20px;
                 font-size: 2em;
             }
         }
@@ -328,7 +330,6 @@
         @media (max-width: 330px) {
             .title {
                 top: 10px;
-                left: 20px;
                 font-size: 1.8em;
             }
         }
@@ -414,6 +415,11 @@
         }
 
         .tech-top-para {
+            margin-bottom: 20px;
+        }
+
+        .tech-mid-para {
+            font-size: 1.6em;
             margin-bottom: 60px;
         }
 
@@ -433,9 +439,13 @@
                 height: 320px;
             }
             .tech-top-para, .tech-bot-para {
-                font-size: 1.7em;
+                font-size: 1.8em;
             }
             .tech-top-para {
+                margin-bottom: 16px;
+            }
+            .tech-mid-para {
+                font-size: 1.5em;
                 margin-bottom: 50px;
             }
             .tech-bot-para {
@@ -448,9 +458,13 @@
                 height: 260px;
             }
             .tech-top-para, .tech-bot-para {
-                font-size: 1.4em;
+                font-size: 1.5em;
             }
             .tech-top-para {
+                margin-bottom: 12px;
+            }
+            .tech-mid-para {
+                font-size: 1.2em;
                 margin-bottom: 40px;
             }
             .tech-bot-para {
@@ -463,9 +477,13 @@
                 height: 200px;
             }
             .tech-top-para, .tech-bot-para {
-                font-size: 1em;
+                font-size: 1.2em;
             }
             .tech-top-para {
+                margin-bottom: 8px;
+            }
+            .tech-mid-para {
+                font-size: 1em;
                 margin-bottom: 30px;
             }
             .tech-bot-para {
