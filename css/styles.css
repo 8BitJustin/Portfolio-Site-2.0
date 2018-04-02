@@ -63,7 +63,7 @@
         width: 50%;
         height: 100vh;
         z-index: 1;
-        border-right: 3px solid #2F4E6F;
+        border-right: 2px solid #2F4E6F;
     }
 
     .topright_div {
@@ -74,7 +74,7 @@
         width: 50%;
         height: 100vh;
         z-index: 1;
-        border-left: 3px solid #2F4E6F;
+        border-left: 2px solid #2F4E6F;
     }
 
     .content-row-left, .content-row-right {
@@ -489,6 +489,21 @@
             .tech-bot-para {
                 margin-top: 30px;
             }
+        }
+
+    /* Current Slide */
+
+        .current-wrapper {
+            height: 100vh;
+        }
+
+        .current-header {
+            font-size: 2.4em;
+            margin-bottom: 30px;
+        }
+
+        .badge-header {
+            font-size: 2.4em;
         }
 
     /*Helps background load properly*/

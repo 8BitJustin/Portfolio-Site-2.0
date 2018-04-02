@@ -15,3 +15,26 @@ CSS updates...
   Numerous changes to top and mid para's including margin and font sizes
 JS updates...
   None
+
+4/2/2018
+Index updates...
+  Added badges.css link
+  Added white stroke to logo, placed on front page
+  Corrected text within tech wrapper
+  Added current-wrapper/slide. Placed reportcard.js icons within to feed info from treehouse
+  Added reportcard.js link
+  Input script for reportcard.js to run (may put this in own file, as well as createChart())
+CSS updates...
+  Reduced border thickness on front page to align with new logo
+  Added Current Slide area, added three classes to alter for HTML
+JS updates...
+  None
+Added/Removed Images
+  Added
+    logoWhiteStroke.png
+New Files
+  badges.css
+  mdb.min.css
+  mdb.min.js
+  reportcard.coffee
+  reportcard.js

@@ -20,6 +20,9 @@
     <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate.css">
 
+    <!-- Badges link -->
+    <link rel="stylesheet" href="css/badges.css">
+
     <title>J.Olson.Digital</title>
   </head>
   <body>
@@ -49,7 +52,7 @@
         </div>
       </div>
       <p class="lead" id="enter-text">Click to enter</p>
-      <img src="img/logo03white.png" alt="Justin Olson Logo" id="enter-image" onclick="pushed()">
+      <img src="img/logoWhiteStroke.png" alt="Justin Olson Logo" id="enter-image" onclick="pushed()">
     </div>
     <div class="overlay">
       <div class="nav-holder text-center" id="navigation">
@@ -88,15 +91,19 @@
           <div class="row h-100 tech-wrapper justify-content-center align-items-center">
             <div class="col-lg-6 col-12 align-self-center">
               <p class="lead text-center tech-top-para">Languages I'm most familiar with</p>
-              <p class="lead text-center tech-mid-para">1-10 scale - 10 being super-human</p>
+              <p class="lead text-center tech-mid-para">1-10 scale ... 10 being super-human</p>
               <div id="chartContainer"></div>
-
             </div>
           </div>
         </div>
         <div class="carousel-item third" data-slide-no='2'>
-          <div>
-            <h1 class="title display-3">Current</h1>
+          <h1 class="title display-3">Current</h1>
+          <div class="row h-100 current-wrapper justify-content-center align-items-center">
+            <div class="col-lg-6 col-12 align-self-center">
+              <h4 class="display-4 current-header text-center">I'm consistantly learning every day through the assistance of multiple websites, with Treehouse being the largest contributor to my studies.</h4>
+              <!-- Badges -->
+                <div class="report-card treehouse"></div>
+            </div>
           </div>
         </div>
         <div class="carousel-item fourth" data-slide-no='3'>
@@ -118,59 +125,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/jquery.canvasjs.min.js"></script>
+    <script src="js/reportcard.js"></script>
     <script src="js/scripts.js"></script>
 
     <script>
-
-
-        const createChart = () => {
-
-          var chart = new CanvasJS.Chart("chartContainer", {
-            animationEnabled: true,
-            theme: "dark1", // "light1", "light2", "dark1", "dark2"
-            backgroundColor: null,
-            title: {
-              // text: "Languages I know",
-              fontColor: '#2F4E6F',
-              fontFamily: 'Roboto',
-            },
-            axisY: {
-              // title: "Comfort Level",
-              titleFontFamily: 'Roboto',
-              titleFontColor: '#2F4E6F',
-              labelFontColor: '#2F4E6F',
-              fontFamily: 'Roboto',
-              gridColor: 'none',
-              tickColor: '#2F4E6F',
-              lineColor: '#2F4E6F',
-              tickLength: 0,
-              // suffix: "%",
-              includeZero: true
-            },
-            axisX: {
-              fontColor: '#2F4E6F',
-              labelFontColor: '#2F4E6F',
-              labelFontFamily: 'Roboto',
-              labelFontSize: 16,
-              tickColor: '#2F4E6F',
-              lineColor: '#2F4E6F',
-              // title: "Countries"
-            },
-            data: [{
-              type: "column",
-              indexLabelFontColor: "#2F4E6F",
-              // yValueFormatString: "#,##0.0#\"%\"",
-              color: '#F0F8FF',
-              dataPoints: [
-                { label: "HTML", y: 9 },
-                { label: "CSS", y: 8 },
-                { label: "JavaScript", y: 7.5 },
-                { label: "jQuery", y: 7 },
-                { label: "Bootstrap", y: 7 },
-                { label: "Python", y: 5 }
-              ],
-            }]
-          });
+      const createChart = () => {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          animationEnabled: true,
+          theme: "dark1", // "light1", "light2", "dark1", "dark2"
+          backgroundColor: null,
+          title: {
+            // text: "Languages I know",
+            fontColor: '#2F4E6F',
+            fontFamily: 'Roboto',
+          },
+          axisY: {
+            // title: "Comfort Level",
+            titleFontFamily: 'Roboto',
+            titleFontColor: '#2F4E6F',
+            labelFontColor: '#2F4E6F',
+            fontFamily: 'Roboto',
+            gridColor: 'none',
+            tickColor: '#2F4E6F',
+            lineColor: '#2F4E6F',
+            tickLength: 0,
+            // suffix: "%",
+            includeZero: true
+          },
+          axisX: {
+            fontColor: '#2F4E6F',
+            labelFontColor: '#2F4E6F',
+            labelFontFamily: 'Roboto',
+            labelFontSize: 16,
+            tickColor: '#2F4E6F',
+            lineColor: '#2F4E6F',
+            // title: "Countries"
+          },
+          data: [{
+            type: "column",
+            indexLabelFontColor: "#2F4E6F",
+            // yValueFormatString: "#,##0.0#\"%\"",
+            color: '#F0F8FF',
+            dataPoints: [
+              { label: "HTML", y: 9 },
+              { label: "CSS", y: 8 },
+              { label: "JavaScript", y: 7.5 },
+              { label: "jQuery", y: 7 },
+              { label: "Bootstrap", y: 7 },
+              { label: "Python", y: 5 }
+            ],
+          }]
+        });
         chart.render();
         chart.destroy();
       }
@@ -185,6 +190,17 @@
       $('#myCarousel').on('slide.bs.carousel', function () {
         $('canvas').css('display', 'none');
       })
+    </script>
+
+    <!-- Script used for Current slide, used to bring in treehouse API information with assist from reportcard.coffee, reportcard.js, and badges.css -->
+
+    <script>
+      $('.report-card.treehouse').reportCard({
+          userName: 'justinolson3',
+          site: 'treehouse',
+          badgesAmount: 6,
+          tooltips: true
+      });
     </script>
 
   </body>
