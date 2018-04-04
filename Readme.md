@@ -38,3 +38,18 @@ New Files
   mdb.min.js
   reportcard.coffee
   reportcard.js
+
+4/3/2018
+Index updates...
+  Commented out buttons from About slide to move to Venture slide
+  Adjusted text on Tech slide
+  Added text and 2 buttons to Venture slide
+CSS updates...
+  Adjusted font sizes for Current slide and badge, also for media queries
+  Added 100vh to Venture slide
+JS updates
+  None
+Added/Removed Images
+  None
+New files
+  None
