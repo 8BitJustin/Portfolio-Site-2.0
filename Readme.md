@@ -53,3 +53,18 @@ Added/Removed Images
   None
 New files
   None
+
+4/12/2018
+Index updates...
+  Altered text on About and Tech slides
+  Created the modal for projects - created first 2 projects
+CSS updates...
+  Altered about text color to a silver-ish
+  Made tech graph smaller at really small resolution
+  Numerous additions regarding modal CSS
+JS updates
+  None
+Added/Removed Images
+  None
+New files
+  None

@@ -75,7 +75,7 @@
             <div class="col-10 col-md-5 col-lg-4 col-xl-3 about-text animated align-self-center">
               <p class="about-para lead">Hiya! I'm Justin, and I like to code. With an initial commit date of June 1, 2015, I'm have learned and am comfortable with numerous languages, including HTML, CSS, JavaScript, a bit of Python, and have experience with libraries such as jQuery and Bootstrap 3/4.</p>
               <p class="about-para lead">I'm constantly learning, and in the last few months, I'm happy to say that a few local businesses have trusted me to put their websites together. With this, I'm hoping to not only gain more freelance experience, but to eventually have a full time position in this field.</p>
-              <p class="about-para lead">My Github repositories and current resume can be accessed below, so if you have any questions, want to work together, or would like an idea to come to life, please reach out, as I'm eager to see where this path leads next.</p>
+              <p class="about-para lead">If you have any questions, want to work together, or would like an idea to come to life, please reach out, as I'm eager to see where this path leads next.</p>
               <!-- Buttons for github, and resume -->
               <!-- <div class="btn-div text-center">
                 <div class="btn-group" role="group" aria-label="Basic example">
@@ -93,7 +93,7 @@
               <p class="lead text-center tech-top-para">Since 2015, I've gained experience with numerous programming languages. Right now, these are the languages I'm most familiar with.</p>
               <p class="lead text-center tech-mid-para">1-10 scale ... 10 being super-human</p>
               <div id="chartContainer"></div>
-              <p class="lead text-center tech-bot-para">I've also experimented with Android app. development, and am currently looking into some JS libraries like React and Angular.</p>
+              <p class="lead text-center tech-bot-para">I've also experimented with Android app. development, and am currently looking at learning React and possibly Angular.</p>
             </div>
           </div>
         </div>
@@ -111,14 +111,14 @@
           <h1 class="title display-3">Ventures</h1>
           <div class="row h-100 venture-wrapper justify-content-center align-items-center">
             <div class="col-lg-6 col-12 align-self-center">
-              <p class="lead text-center tech-top-para">Up until late 2017, I was practicing my talent by creating my own projects and websites. This was a good way to finally put pencil to paper (or, fingers to...keyboard..?) and demonstrate what I know. Most of my work can be found on my Github account (link below).</p>
-              <p class="lead text-center tech-top-para">In late 2017, I was presented with an opportunity to finally build a website for a local business, and after two solid months, I finished the website for R&R Pizza Express. Shortly after, I finished my second real-world website for Arizona Tax & Business. Those can also be located below, along with a few other website examples I've put together.</p>
-              <div class="row">
-                <div class="col-lg-6">
-                  <button type="button" class="btn btn-primary btn-lg btn-block">Projects</button>
+              <p class="lead text-center vent-top-para">Up until late 2017, I was practicing my talent by creating my own projects and websites. This was a good way to finally put pencil to paper (or, fingers to...keyboard..?) and demonstrate what I know. Most of my work can be found on my Github account (link below).</p>
+              <p class="lead text-center vent-bot-para">In late 2017, I was presented with an opportunity to finally build a website for a local business, and after two solid months, I finished the website for R&R Pizza Express. Shortly after, I finished my second real-world website for Arizona Tax & Business. Those can also be located below, along with a few other website examples I've put together.</p>
+              <div class="row mt-5">
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-outline-light btn-lg btn-block btn-venture" id="btn-pro" data-toggle="modal" data-target="#projectModal"><h1 class="display-4">Projects</h1></button>
                 </div>
-                <div class="col-lg-6">
-                  <button type="button" class="btn btn-primary btn-lg btn-block">Github</button>
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-outline-light btn-lg btn-block btn-venture" id="btn-git"><h1 class="display-4">Github</h1></button>
                 </div>
               </div>
             </div>
@@ -127,6 +127,50 @@
         <div class="carousel-item fifth" data-slide-no='4'>
           <div>
             <h1 class="title display-3">Contact</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title lead" id="exampleModalLongTitle">Projects</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Project One -->
+            <div class="col-12 project-div" id="project-one">
+              <h1 class="display-4 project-header text-center">R&R Pizza Express</h1>
+              <p class="lead text-center live">Live</p>
+              <p class="lead">My first real-world opportunity for a local business. Completed in January 2018, the website for R&R Pizza Express took me two months to complete.</p>
+              <p class="lead">For this site, I used HTML, CSS, Bootstrap 4, JavaScript, jQuery, and some PHP for the contact form. I'm truly happy to have been offered this opportunity, and continue to maintain this site to this day.</p>
+              <div class="project-btn-div text-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-outline-info btn-website"><a href="https://rrpizzamarana.com/" target="_blank">Website</a></button>
+                  <button type="button" class="btn btn-outline-info btn-repo"><a href="https://github.com/8BitJustin/R-R-Pizza-Website" target="_blank">GitHub Repo</a></button>
+                </div>
+              </div>
+            </div>
+            <!-- Project Two -->
+            <div class="col-12 project-div" id="project-two">
+              <h1 class="display-4 project-header">AZ Tax & Business (live)</h1>
+              <p class="lead">I've redone this site 2-3 times over the last 2 years, but now it's finally live and kicking. A request from my step-mother, this finalized version only took me three weeks to complete.</p>
+              <p class="lead">Much like the R&R site, I used HTML, CSS, Bootstrap 4, JavaScript, jQuery, and some PHP for the contact form. </p>
+              <div class="project-btn-div text-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-outline-info btn-website"><a href="http://arizonataxandbusiness.com/" target="_blank">Website</a></button>
+                  <button type="button" class="btn btn-outline-info btn-repo"><a href="https://github.com/8BitJustin/Taxsite2018" target="_blank">GitHub Repo</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
