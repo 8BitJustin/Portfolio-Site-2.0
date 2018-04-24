@@ -68,42 +68,44 @@
       <div class="carousel-inner">
         <div class="carousel-item first active" data-slide-no='0'>
           <h1 class="title display-3">About Myself</h1>
-          <div class="row about-wrapper h-100 justify-content-center">
-            <div class="col-8 col-md-5 col-lg-4 col-xl-3 about-image animated align-self-center">
-              <img src="img/bwTumamocSelfie.jpg" alt="Black and White Image of myself on Tumamoc Hill" class="img-fluid">
-            </div>
-            <div class="col-10 col-md-5 col-lg-4 col-xl-3 about-text animated align-self-center">
-              <p class="about-para lead">Hiya! I'm Justin, and I like to code. With an initial commit date of June 1, 2015, I'm have learned and am comfortable with numerous languages, including HTML, CSS, JavaScript, a bit of Python, and have experience with libraries such as jQuery and Bootstrap 3/4.</p>
-              <p class="about-para lead">I'm constantly learning, and in the last few months, I'm happy to say that a few local businesses have trusted me to put their websites together. With this, I'm hoping to not only gain more freelance experience, but to eventually have a full time position in this field.</p>
-              <p class="about-para lead">If you have any questions, want to work together, or would like an idea to come to life, please reach out, as I'm eager to see where this path leads next.</p>
-              <!-- Buttons for github, and resume -->
-              <!-- <div class="btn-div text-center">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                  <a href="https://github.com/8BitJustin" class="btn btn-lg btn-outline-light" id="btn-github" target="_blank">GitHub</a>
-                  <a href="justin-resume-reduce-2017.pdf" class="btn btn-lg btn-outline-light" id="btn-resume" target="_blank">Resume</a>
+          <div class="row h-100">
+            <div class="align-self-center">
+              <div class="row about-wrapper h-100 justify-content-center">
+                <div class="col-10 col-md-5 col-lg-4 col-xl-3 about-image animated align-self-center text-center">
+                  <img src="img/bwTumamocSelfie.jpg" alt="Black and White Image of myself on Tumamoc Hill" class="img-fluid">
                 </div>
-              </div> Commented out to test on another slide -->
+                <div class="col-10 col-md-6 col-lg-5 col-xl-4 about-text animated align-self-center">
+                  <p class="para-size lead">Hiya! I'm Justin, and I like to code. With an initial commit date of June 1, 2015, I'm have learned and am comfortable with numerous languages, including <span style="color: #FF9966">HTML</span>, <span style="color: #50BFE6">CSS</span>, <span style="color: #FF6EFF">JavaScript</span>, a bit of <span style="color: #FFDB00">Python</span>, and I also have experience with libraries such as <span style="color: #87FF2A">jQuery</span> and <span style="color: #FC5A8D">Bootstrap 3/4</span>.</p>
+                  <p class="para-size lead">I'm constantly learning, and in the last few months, I'm happy to say that a few local businesses have trusted me to put their websites together. With this, I'm hoping to not only gain more freelance experience, but to eventually have a full time position in this field.</p>
+                  <p class="para-size lead">If you have any questions, want to work together, or would like an idea to come to life, please reach out, as I'm eager to see where this path leads next.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="carousel-item second" id="second" data-slide-no='1'>
           <h1 class="title display-3">Technical</h1>
           <div class="row h-100 tech-wrapper justify-content-center align-items-center">
-            <div class="col-lg-6 col-12 align-self-center">
-              <p class="lead text-center tech-top-para">Since 2015, I've gained experience with numerous programming languages. Right now, these are the languages I'm most familiar with.</p>
-              <p class="lead text-center tech-mid-para">1-10 scale ... 10 being super-human</p>
+            <div class="col-lg-6 col-12 align-self-center tech-text-wrapper">
+              <p class="lead tech-top-para para-size">Since 2015, I've gained experience with numerous programming languages. Currently, these are the languages I'm most familiar with. I've also experimented with Android app. development, and will be aiming at learning React as well as Angular in the future.</p>
+              <p class="lead text-center tech-mid-para para-size">1-10 scale ... 10 being super-human</p>
               <div id="chartContainer"></div>
-              <p class="lead text-center tech-bot-para">I've also experimented with Android app. development, and am currently looking at learning React and possibly Angular.</p>
             </div>
           </div>
         </div>
         <div class="carousel-item third" data-slide-no='2'>
           <h1 class="title display-3">Current</h1>
-          <div class="row h-100 current-wrapper justify-content-center align-items-center">
-            <div class="col-lg-6 col-12 align-self-center">
-              <h4 class="display-4 current-header text-center">Education and continued learing is key, and I'm consistantly learning every day through the assistance of multiple websites, with Treehouse being the largest contributor to my studies.</h4>
-              <!-- Badges -->
-              <div class="report-card treehouse"></div>
+          <div class="row h-100">
+            <div class="align-self-center">
+              <div class="row current-wrapper h-100 justify-content-center">
+                <div class="col-10 col-lg-3 align-self-center report-card-div">
+                  <div class="report-card treehouse"></div>
+                </div>
+                <div class="col-10 col-lg-3 align-self-center google-badge-div text-center">
+                  <p class="lead current-para para-size">In addition, I was recently made a recipient of the Grow with Google Scholarship.</p>
+                  <img src="img/GrowWithGoogleBadge.jpg" alt="Grow with Google Badge" class="img-fluid">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -111,22 +113,55 @@
           <h1 class="title display-3">Ventures</h1>
           <div class="row h-100 venture-wrapper justify-content-center align-items-center">
             <div class="col-lg-6 col-12 align-self-center">
-              <p class="lead text-center vent-top-para">Up until late 2017, I was practicing my talent by creating my own projects and websites. This was a good way to finally put pencil to paper (or, fingers to...keyboard..?) and demonstrate what I know. Most of my work can be found on my Github account (link below).</p>
-              <p class="lead text-center vent-bot-para">In late 2017, I was presented with an opportunity to finally build a website for a local business, and after two solid months, I finished the website for R&R Pizza Express. Shortly after, I finished my second real-world website for Arizona Tax & Business. Those can also be located below, along with a few other website examples I've put together.</p>
+              <p class="lead vent-top-para para-size">Up until late 2017, I was practicing my talent by creating my own projects and websites. This was a good way to finally put pencil to paper (or, fingers to...keyboard..?) and demonstrate what I've learned. Most of my work can be found on my Github account (link below).</p>
+              <p class="lead vent-bot-para para-size">In late 2017, I was presented with an opportunity to finally build a website for a local business, and after two solid months, I finished the website for R&R Pizza Express. Shortly after, I finished my second real-world website for Arizona Tax & Business. Those can also be located below, along with a few other website examples I've put together.</p>
               <div class="row mt-5">
                 <div class="col-md-6">
-                  <button type="button" class="btn btn-outline-light btn-lg btn-block btn-venture" id="btn-pro" data-toggle="modal" data-target="#projectModal"><h1 class="display-4">Projects</h1></button>
+                  <button type="button" class="btn btn-lg btn-block btn-venture" id="btn-pro" data-toggle="modal" data-target="#projectModal"><h1 class="display-4">Projects</h1></button>
                 </div>
-                <div class="col-md-6">
-                  <button type="button" class="btn btn-outline-light btn-lg btn-block btn-venture" id="btn-git"><h1 class="display-4">Github</h1></button>
+                <div class="col-md-6 git-btn-div">
+                  <a href="https://github.com/8BitJustin" target="_blank"><button type="button" class="btn btn-lg btn-block btn-venture" id="btn-git"><h1 class="display-4"> Github</h1></button></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item fifth" data-slide-no='4'>
-          <div>
-            <h1 class="title display-3">Contact</h1>
+          <h1 class="title display-3">Contact</h1>
+          <div class="row h-100 justify-content-center">
+            <div class="align-self-center">
+              <div class="row contact-wrapper h-100 justify-content-center">
+                <div class="col-10 col-md-5 col-lg-4 col-xl-3 align-self-center">
+                  <p class="para-contact lead">So, now that you've seen my whimsical website, terrific talents, and prodigious projects, you may want to reach out to me for various reasons.</p>
+                  <p class="para-contact lead">Please use the form to contact me in regards to any questions regarding any freelance or other types of work.</p>
+                </div>
+                <div class="col-10 col-md-5 col-lg-4 col-xl-3 align-self-center">
+                  <!-- Contact form -->
+                  <form method="post" action="send_email_form.php">
+                    <div class="form-row">
+                      <div class="form-group col-md-12">
+                        <input type="text" class="form-control form-control-sm" name="name" id="name" placeholder="Name">
+                      </div>
+                      <div class="form-group col-md-12">
+                        <input type="text" class="form-control form-control-sm" name="email" id="email" placeholder="Email">
+                      </div>
+                      <div class="form-group col-md-12">
+                        <textarea class="form-control form-control-sm" name="message" id="message" placeholder="Message" rows="3"></textarea>
+                      </div>
+                      <div class="form-group col-md-12 lead">
+                        <button type="submit" value="Submit" class="btn btn-block btn-outline-light submit-btn">Submit</button>
+                      </div>
+                      <div class="social-icons">
+                        <a href="https://www.facebook.com/8BitJustin" target="_blank"><img src="img/facebook.png" alt="Facebook Icon"></a>
+                        <a href="https://www.linkedin.com/in/justinolson34/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Icon"></a>
+                        <a href="https://www.instagram.com/j.olson.digital/" target="_blank"><img src="img/instagram.png" alt="Instagram Icon"></a>
+                        <a href="https://github.com/8BitJustin" target="_blank "><img src="img/github.png" alt="Github Icon"></a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -146,7 +181,7 @@
             <!-- Project One -->
             <div class="col-12 project-div" id="project-one">
               <h1 class="display-4 project-header text-center">R&R Pizza Express</h1>
-              <p class="lead text-center live">Live</p>
+              <p class="lead text-center live">Live Site</p>
               <p class="lead">My first real-world opportunity for a local business. Completed in January 2018, the website for R&R Pizza Express took me two months to complete.</p>
               <p class="lead">For this site, I used HTML, CSS, Bootstrap 4, JavaScript, jQuery, and some PHP for the contact form. I'm truly happy to have been offered this opportunity, and continue to maintain this site to this day.</p>
               <div class="project-btn-div text-center">
@@ -158,7 +193,8 @@
             </div>
             <!-- Project Two -->
             <div class="col-12 project-div" id="project-two">
-              <h1 class="display-4 project-header">AZ Tax & Business (live)</h1>
+              <h1 class="display-4 project-header text-center">AZ Tax & Business</h1>
+              <p class="lead text-center live">Live Site</p>
               <p class="lead">I've redone this site 2-3 times over the last 2 years, but now it's finally live and kicking. A request from my step-mother, this finalized version only took me three weeks to complete.</p>
               <p class="lead">Much like the R&R site, I used HTML, CSS, Bootstrap 4, JavaScript, jQuery, and some PHP for the contact form. </p>
               <div class="project-btn-div text-center">
@@ -186,78 +222,87 @@
     <script src="js/scripts.js"></script>
 
     <script>
-      const createChart = () => {
-        var chart = new CanvasJS.Chart("chartContainer", {
+    // Script to create canvas
+    const createChart = () => {
+      CanvasJS.addColorSet("colorSet4",
+      [//colorSet Array
+          "#FF9966",
+          "#50BFE6",
+          "#FF6EFF",
+          "#87FF2A",
+          "#FC5A8D",
+          "#FFDB00"
+      ]);
+      var chart = new CanvasJS.Chart("chartContainer", {
+          colorSet: "colorSet4",
           animationEnabled: true,
-          theme: "dark1", // "light1", "light2", "dark1", "dark2"
           backgroundColor: null,
+
           title: {
-            // text: "Languages I know",
-            fontColor: '#2F4E6F',
-            fontFamily: 'Roboto',
+          // text: "Languages I know",
+          fontColor: '#C8D7E3',
+          fontFamily: 'Roboto',
           },
           axisY: {
-            // title: "Comfort Level",
-            titleFontFamily: 'Roboto',
-            titleFontColor: '#2F4E6F',
-            labelFontColor: '#2F4E6F',
-            fontFamily: 'Roboto',
-            gridColor: 'none',
-            tickColor: '#2F4E6F',
-            lineColor: '#2F4E6F',
-            tickLength: 0,
-            // suffix: "%",
-            includeZero: true
+          // title: "Comfort Level",
+          titleFontFamily: 'Roboto',
+          titleFontColor: '#C8D7E3',
+          labelFontColor: '#C8D7E3',
+          fontFamily: 'Roboto',
+          gridColor: 'none',
+          tickColor: '#C8D7E3',
+          lineColor: '#C8D7E3',
+          tickLength: 0,
+          // suffix: "%",
+          includeZero: true
           },
           axisX: {
-            fontColor: '#2F4E6F',
-            labelFontColor: '#2F4E6F',
-            labelFontFamily: 'Roboto',
-            labelFontSize: 16,
-            tickColor: '#2F4E6F',
-            lineColor: '#2F4E6F',
-            // title: "Countries"
+          fontColor: '#C8D7E3',
+          labelFontColor: '#C8D7E3',
+          labelFontFamily: 'Roboto',
+          labelFontSize: 16,
+          tickColor: '#C8D7E3',
+          lineColor: '#C8D7E3',
+          // title: "Countries"
           },
           data: [{
-            type: "column",
-            indexLabelFontColor: "#2F4E6F",
-            // yValueFormatString: "#,##0.0#\"%\"",
-            color: '#F0F8FF',
-            dataPoints: [
+          type: "column",
+          indexLabelFontColor: "#C8D7E3",
+          // yValueFormatString: "#,##0.0#\"%\"",
+          // color: '#C8D7E3', Commented out, as this overlaps the color set
+          dataPoints: [
               { label: "HTML", y: 9 },
               { label: "CSS", y: 8 },
               { label: "JavaScript", y: 7.5 },
               { label: "jQuery", y: 7 },
               { label: "Bootstrap", y: 7 },
               { label: "Python", y: 5 }
-            ],
+          ],
           }]
-        });
-        chart.render();
-        chart.destroy();
-      }
-    </script>
+      });
+      chart.render();
+      chart.destroy();
+    }
 
-    <script>
-      $('#myCarousel').on('slid.bs.carousel', function () {
+    $('#myCarousel').on('slid.bs.carousel', function () {
         $('canvas').css('display', 'block');
         createChart();
       })
 
-      $('#myCarousel').on('slide.bs.carousel', function () {
-        $('canvas').css('display', 'none');
-      })
+    $('#myCarousel').on('slide.bs.carousel', function () {
+      $('canvas').css('display', 'none');
+    })
+
     </script>
 
-    <!-- Script used for Current slide, used to bring in treehouse API information with assist from reportcard.coffee, reportcard.js, and badges.css -->
-
     <script>
-      $('.report-card.treehouse').reportCard({
-          userName: 'justinolson3',
-          site: 'treehouse',
-          badgesAmount: 6,
-          tooltips: true
-      });
+    // Script used for Current slide, used to bring in treehouse API information with assist from reportcard.coffee, reportcard.js, and badges.css
+    $('.report-card.treehouse').reportCard({
+        userName: 'justinolson3',
+        site: 'treehouse',
+        badgesAmount: 6,
+        tooltips: true
+    });
     </script>
 
   </body>

@@ -68,3 +68,31 @@ Added/Removed Images
   None
 New files
   None
+
+  4/23/2018 (The...I really need to commit more often...update)
+  Index updates...
+    Enclosed about-wrapper within it's own div so it's now centered when on mobile
+    Adjusted text within Tech slide
+    Re-arranged Current slide
+      Removed descriptive text
+      Put reportcard div on top and added Grow with Google image and text
+      Removed original text that was originally commented out
+    Added Contact slide context
+    Added new color set for chart
+    Altered grid colors to match new darker background
+  CSS updates...
+    Made all backgrounds same gradient color
+    Altered nav links colors, and added scale when hovered and active
+    Adjusted para-size class font sizes for normal and smaller resolutions
+    Adjusted about image size
+    Added text align: center to all text when smaller resolution (mobile)
+    Gave divs on Current slide some space (removed on smaller res)
+    New colors given to buttons on Venture slide
+    Added a GRIP of css rules for Contact slide (like, all)
+  JS updates...
+    Altered paragraph text within reportcard.js
+  Added/Removed files...
+    Added favicon.ico
+    Added send_email_form.php
+    Added facebook, github, instagram, linkedin .pngs
+    GrowWithGoogleBadge.jpg

@@ -84,7 +84,7 @@ $.ajaxPrefilter(function(options, originalOptions, jqXHR) {
         var html, lastBadges, liWidth;
         lastBadges = data.badges.slice(-options.badgesAmount);
         liWidth = (100 / (lastBadges.length + 1)) + "%";
-        html = "<h1 class='display-4 py-3 badge-header'>At this time, I have passed " + data.badge_count + " lessons and scored " + (toThousands(data.points_total)) + " points with Treehouse.</h1>\n<p class='pb-3 badge-text'>(Check out some of my last passed course content at the badges below)</p>\n<ul class=\"badges\">";
+        html = "<p class='lead current-para para-size mb-1'>Continued education is key, and I'm consistantly learning every day through the assistance of multiple outlets.</p><p class='lead current-para para-size mb-1'>At this time, I have passed " + data.badge_count + " lessons and scored " + (toThousands(data.points_total)) + " points with Treehouse.</p>\n<p class='badge-text'>(Check out some of my last passed course content at the badges below)</p>\n<ul class=\"badges\">";
         lastBadges.forEach(function(badge) {
           return html += "<li style=\"width: " + liWidth + ";\" title=\"" + badge.label + "\">\n  <a href=\"" + data.profile_url + "\" target=\"_blank\" data-toggle=\"tooltip\" data-placement=\"top\" >\n    <img src=\"" + badge.icon_url + "\" alt=\"" + badge.label + "\"/>\n  </a>\n</li>";
         });
